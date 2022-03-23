@@ -66,7 +66,7 @@ jobs:
         host: ${{ secrets.SSH_IP }}
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.SSH_PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем
+        passphrase: ${{ secrets.SSH_PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем lf pfobasd
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull agmaksim/infra_actions:latest
